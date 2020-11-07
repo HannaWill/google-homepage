@@ -1,0 +1,96 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,0.87);
+}
+.nav {
+    list-style-type: none; /* no bullet points on nav list elements*/
+    display:flex;
+    font-size: 13px;
+    
+
+}
+
+.nav :nth-child(3) { /* selects only the 3rd item, could use class on 3rd item instead and select that way*/
+    padding-right: 30px;
+    margin-left: auto; /*float 3rd and 4th nav flex item to right (Images)*/
+    
+}
+a { /*styling on heading no underline, inherit colour*/
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{ /* header underline on hover*/
+    text-decoration: underline;
+}
+.nav :nth-child(1) {
+    padding-right: 30px;
+}
+
+img, input{ /* center image and search bar */
+    display: block; 
+    margin: auto;
+}
+
+img {
+    margin-top: 20%;
+}
+
+input {
+    margin-top: 50px;
+    width: 450px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: lightgrey;
+    border-style: solid;
+    height: 40px;
+    outline: none; /* remove outline when search bar clicked on */
+}
+
+.footer, .top-footer {
+    display: flex;
+    list-style-type: none;
+    background: #f2f2f2;
+    height: 40px;
+    align-items: center;
+    color:grey;
+    border-top: 1px solid #dadce0;
+    border-bottom: 1px solid #dadce0;
+    margin-top: 0;
+
+}
+.end {
+    margin-left: auto; /* puts footer items on right */
+}
+
+.footer li {
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+.top-footer {
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+footer {
+    position: fixed; /*puts bother footers stacked on bottom */
+    bottom: 0;
+    width: 100%;
+}
+
+.search-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.search-buttons button {
+    padding: 8px;
+    border: none;
+    margin: 25px 5px;
+    background-color:#f8f9fa;
+    color: #3c4043;
+    font-size: 14px;
+}
+
